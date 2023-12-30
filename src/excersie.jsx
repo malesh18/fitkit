@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const SERVER_URI = "http://localhost:5000";
+const SERVER_URI = "https://fitkit-backend.azurewebsites.net";
 
 const Excersie = () => {
   const [eName, setEName] = useState("");
