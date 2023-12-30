@@ -43,7 +43,7 @@ const Bot = () => {
       </div>
       {isOpen && (
         <iframe
-          src="https://webchat.botframework.com/embed/testingbotservices1-bot?s=6YW98xw4fic.toXCZkjzPEdVNf12Nro8XEg-Xghbe5_L2TVHb3VoPcU&style=dark"
+          src="https://webchat.botframework.com/embed/mybottestservices-bot?s=CoKtvapHS3g.lfkbtxHqKSkdU3SPiO31VQmngGMZDrDvnL1k1iuOu-Q"
           style={{
             border: "none",
             display: "block",
