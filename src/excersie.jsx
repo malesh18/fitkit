@@ -3,32 +3,25 @@ import axios from "axios";
 
 const SERVER_URI = "https://fitkit-backend.azurewebsites.net";
 
-const Excersie = () => {
+const Exercise = () => {
   const [eName, setEName] = useState("");
   const [eRep, setERep] = useState("");
   const [result, setResult] = useState([]);
 
   const fetchResult = () => {
     axios.get(`${SERVER_URI}/e/all`).then((res) => {
-      console.log("The Result :", res.data.result);
       setResult(res.data.result);
     }, console.error);
   };
 
   const handleSubmit = (e) => {
-    try {
-      e.preventDefault();
-      console.log(eName, eRep);
+    e.preventDefault();
 
-      axios(`${SERVER_URI}/e/add`, {
-        method: "POST",
-        data: { eName, eRep },
-      }).then((res) => {
-        console.log("The Response : ", res.data);
-      }, console.error);
-    } catch (e) {
-      console.log("Error Occcured : ", e);
-    }
+    axios.post(`${SERVER_URI}/e/add`, { eName, eRep }).then((res) => {
+      console.log("The Response: ", res.data);
+      // Fetch updated data after adding a new exercise
+      fetchResult();
+    }, console.error);
   };
 
   useEffect(() => {
@@ -36,44 +29,62 @@ const Excersie = () => {
   }, []);
 
   return (
-    <>
-      <h1>Add the Excersie</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div style={{ maxWidth: "600px", margin: "auto" }}>
+      <h1 style={{ textAlign: "center" }}>Add an Exercise</h1>
+      <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+        <div style={{ marginBottom: "10px" }}>
           <input
             value={eName}
             onChange={(e) => setEName(e.target.value)}
             type="text"
-            placeholder="excersies"
+            placeholder="Exercise"
+            style={{ padding: "8px", width: "100%" }}
           />
         </div>
-        <div>
+        <div style={{ marginBottom: "10px" }}>
           <input
             type="number"
             placeholder="Number of reps"
             value={eRep}
             onChange={(e) => setERep(e.target.value)}
+            style={{ padding: "8px", width: "100%" }}
           />
         </div>
         <div>
-          <button type="submit">Add</button>
+          <button
+            type="submit"
+            style={{
+              padding: "8px",
+              width: "100%",
+              backgroundColor: "blue",
+              color: "white",
+              border: "none",
+            }}
+          >
+            Add
+          </button>
         </div>
       </form>
 
       <div>
-        <h1>All the Excersies</h1>
-        <ul>
-          {result.map((item) => {
-            return (
-              <li key={item.id}>
-                {item.eName} - {item.eRep}
-              </li>
-            );
-          })}
+        <h2 style={{ textAlign: "center" }}>All Exercises</h2>
+        <ul style={{ listStyleType: "none", padding: 0 }}>
+          {result.map((item) => (
+            <li
+              key={item.id}
+              style={{
+                borderBottom: "1px solid #ddd",
+                padding: "10px",
+                marginBottom: "10px",
+              }}
+            >
+              {item.eName} - {item.eRep}
+            </li>
+          ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Excersie;
+export default Exercise;
