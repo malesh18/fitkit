@@ -21,6 +21,8 @@ const Exercise = () => {
       console.log("The Response: ", res.data);
       // Fetch updated data after adding a new exercise
       fetchResult();
+      setEName("");
+      setERep("");
     }, console.error);
   };
 
@@ -29,61 +31,75 @@ const Exercise = () => {
   }, []);
 
   return (
-    <div style={{ maxWidth: "600px", margin: "auto" }}>
-      <h1 style={{ textAlign: "center" }}>Add an Exercise</h1>
-      <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
-        <div style={{ marginBottom: "10px" }}>
-          <input
-            value={eName}
-            onChange={(e) => setEName(e.target.value)}
-            type="text"
-            placeholder="Exercise"
-            style={{ padding: "8px", width: "100%" }}
-          />
-        </div>
-        <div style={{ marginBottom: "10px" }}>
-          <input
-            type="number"
-            placeholder="Number of reps"
-            value={eRep}
-            onChange={(e) => setERep(e.target.value)}
-            style={{ padding: "8px", width: "100%" }}
-          />
-        </div>
+    <>
+      <div style={{ maxWidth: "600px", margin: "auto" }}>
+        <h1>FitKit</h1>
         <div>
-          <button
-            type="submit"
-            style={{
-              padding: "8px",
-              width: "100%",
-              backgroundColor: "blue",
-              color: "white",
-              border: "none",
-            }}
-          >
-            Add
-          </button>
+          FitKit is a comprehensive fitness tracking application that helps
+          users organize and monitor their exercise routines. With an intuitive
+          interface, users can effortlessly add new exercises, track the number
+          of repetitions, and view a history of their workout sessions. The
+          application not only streamlines the process of managing exercise data
+          but also provides valuable insights into personal fitness progress
+          over time.
         </div>
-      </form>
-
-      <div>
-        <h2 style={{ textAlign: "center" }}>All Exercises</h2>
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          {result.map((item) => (
-            <li
-              key={item.id}
+      </div>
+      <div style={{ maxWidth: "600px", margin: "auto" }}>
+        <h1 style={{ textAlign: "center" }}>Add an Exercise</h1>
+        <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+          <div style={{ marginBottom: "10px" }}>
+            <input
+              value={eName}
+              onChange={(e) => setEName(e.target.value)}
+              type="text"
+              placeholder="Exercise"
+              style={{ padding: "8px", width: "100%" }}
+            />
+          </div>
+          <div style={{ marginBottom: "10px" }}>
+            <input
+              type="number"
+              placeholder="Number of reps"
+              value={eRep}
+              onChange={(e) => setERep(e.target.value)}
+              style={{ padding: "8px", width: "100%" }}
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
               style={{
-                borderBottom: "1px solid #ddd",
-                padding: "10px",
-                marginBottom: "10px",
+                padding: "8px",
+                width: "100%",
+                backgroundColor: "blue",
+                color: "white",
+                border: "none",
               }}
             >
-              {item.eName} - {item.eRep}
-            </li>
-          ))}
-        </ul>
+              Add
+            </button>
+          </div>
+        </form>
+
+        <div>
+          <h2 style={{ textAlign: "center" }}>All Exercises</h2>
+          <ul style={{ listStyleType: "none", padding: 0 }}>
+            {result.map((item) => (
+              <li
+                key={item.id}
+                style={{
+                  borderBottom: "1px solid #ddd",
+                  padding: "10px",
+                  marginBottom: "10px",
+                }}
+              >
+                {item.eName} - {item.eRep}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
