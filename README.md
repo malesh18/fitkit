@@ -1,10 +1,10 @@
 <h1>FitKit - Fitness Tracking Application</h1>
 <h2>Project Title: FitKit</h2>
-<b><a href="<YOUR_APP_DEMO_URL>">FitKit</a></b>
+<b><a href="https://proud-ground-06cb9f410.4.azurestaticapps.net/">FitKit</a></b>
 <br>
 <h2>Project Details</h2>
-<b>Project Demo URL :</b> <YOUR_APP_DEMO_URL> <br>
-<b>Github Repository URL :</b> <YOUR_GITHUB_REPO_URL> <br>
+<b>Project Demo URL :</b> https://proud-ground-06cb9f410.4.azurestaticapps.net/ <br>
+<b>Github Repository URL :</b> https://github.com/malesh18/fitkit<br>
 <b>Industry :</b> Fitness and Health<br>
 
 <h2>Application Overview</h2>
@@ -29,21 +29,25 @@
 </ul>
 
 <h2>Screenshots</h2>
-<h3>FitKit Dashboard</h3>
-<b>Description:</b><p align="justify">The FitKit dashboard provides an overview of your exercise routine and fitness progress.</p>
-<img src="<YOUR_IMAGE_URL>" alt="fitkit-dashboard"></img><br>
+<h3>Static Web App</h3>
+<b>Description:</b><p align="justify">Using Static Web App for hosting frontend of the Application</p>
+<img src="https://drive.google.com/file/d/1LGfnbgcG0A-s81dptJiaNjr8MQrd8QWb/view?usp=drive_link" alt="fitkit-dashboard"></img><br>
 
-<h3>Exercise Logging</h3>
-<b>Description:</b><p align="justify">Easily add new exercises to your routine with the intuitive exercise logging feature.</p>
-<img src="<YOUR_IMAGE_URL>" alt="exercise-logging"></img><br>
+<h3>App Service</h3>
+<b>Description:</b><p align="justify">Using App service for hosting backend of the application</p>
+<img src="https://drive.google.com/file/d/1LA1Ld_HwCTtjyoddZVf2Kkgj4TWDjZ4Q/view?usp=drive_link" alt="exercise-logging"></img><br>
 
-<h3>Workout History</h3>
-<b>Description:</b><p align="justify">Access a detailed history of your workout sessions to track your fitness journey.</p>
-<img src="<YOUR_IMAGE_URL>" alt="workout-history"></img><br>
+<h3>Azure Cosmos DB</h3>
+<b>Description:</b><p align="justify">Azure Cosmos DB is used for storing data.</p>
+<img src="https://drive.google.com/file/d/1pE21UqE450ZitQ6vdV5ZNNcMC88EL-h1/view?usp=drive_link" alt="workout-history"></img><br>
 
-<h3>Fitness Insights</h3>
-<b>Description:</b><p align="justify">FitKit provides valuable insights into your personal fitness progress over time.</p>
-<img src="<YOUR_IMAGE_URL>" alt="fitness-insights"></img>
+<h3>Azure Bot</h3>
+<b>Description:</b><p align="justify">Using Azure Bot Service as for  chatbot.</p>
+<img src="https://drive.google.com/file/d/1pthRrOxXREZhu9TxFLZlwofxFGNSRDMF/view?usp=drive_link" alt="fitness-insights"></img>
+
+<h3>Live Demo </h3>
+<b>Description:</b><p align="justify">Live project hosted using azure cloud services .</p>
+<img src="https://drive.google.com/file/d/16gBpU-QuYl2sg2xhZsWF7fKoMCrGP2zB/view?usp=drive_link" alt="fitness-insights"></img>
 
 <h2>Future Enhancements</h2>
 <p align="justify">FitKit has promising avenues for growth, including the integration of advanced analytics for deeper insights, personalized workout recommendations, and social features for community engagement. Continuous optimization for usability and additional tracking capabilities are also on the horizon. The development team is committed to enhancing FitKit to meet evolving user needs and provide a comprehensive fitness tracking experience.</p>
