@@ -35,7 +35,7 @@
 
 <h3>App Service</h3>
 <b>Description:</b><p align="justify">Using App service for hosting backend of the application</p>
-<img src="https://drive.google.com/file/d/1LA1Ld_HwCTtjyoddZVf2Kkgj4TWDjZ4Q/view?usp=drive_link" alt="exercise-logging"></img><br>
+<img src="https://github.com/malesh18/fitkit/blob/main/screenshots/backend.png" alt="exercise-logging"></img><br>
 
 <h3>Azure Cosmos DB</h3>
 <b>Description:</b><p align="justify">Azure Cosmos DB is used for storing data.</p>
