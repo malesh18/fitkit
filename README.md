@@ -24,8 +24,8 @@
 <h2>Technology Stack</h2>
 <ul>
     <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
-    <li><b>Backend:</b> <YOUR_BACKEND_TECHNOLOGY></li>
-    <li><b>Database:</b> <YOUR_DATABASE_TECHNOLOGY></li>
+    <li><b>Backend:</b> Node.js , Express.js</li>
+    <li><b>Database:</b> Azure Cosmos DB</li>
 </ul>
 
 <h2>Screenshots</h2>
