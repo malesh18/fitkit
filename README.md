@@ -5,6 +5,7 @@
 <h2>Project Details</h2>
 <b>Project Demo URL :</b> https://proud-ground-06cb9f410.4.azurestaticapps.net/ <br>
 <b>Github Repository URL :</b> https://github.com/malesh18/fitkit<br>
+<b>Google Drive URL :</b> <br>
 <b>Industry :</b> Fitness and Health<br>
 
 <h2>Application Overview</h2>
